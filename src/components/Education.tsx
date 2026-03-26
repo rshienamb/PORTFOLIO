@@ -4,6 +4,7 @@ import { EDUCATION } from "../data";
 import Icon, { IconName } from "./Icon";
 
 const imageStyle = { width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 22%" } as const;
+const protectMedia = (e: React.SyntheticEvent<HTMLElement>) => e.preventDefault();
 
 const Education: React.FC = () => {
   const [modal, setModal] = useState<number | null>(null);
@@ -23,8 +24,12 @@ const Education: React.FC = () => {
           <div key={i} className="card edu-card" onClick={() => setModal(i)}>
             <div className="edu-img-box">
               <img
+                className="protected-media"
                 src={e.image}
                 alt={e.stage}
+                draggable={false}
+                onDragStart={protectMedia}
+                onContextMenu={protectMedia}
                 onError={(ev) => {
                   (ev.target as HTMLImageElement).style.display = "none";
                   (ev.target as HTMLImageElement).nextElementSibling?.removeAttribute("style");
@@ -57,8 +62,12 @@ const Education: React.FC = () => {
             </button>
             <div className="modal-edu-image">
               <img
+                className="protected-media"
                 src={activeEducation.image}
                 alt={activeEducation.stage}
+                draggable={false}
+                onDragStart={protectMedia}
+                onContextMenu={protectMedia}
                 onError={(ev) => {
                   (ev.target as HTMLImageElement).style.display = "none";
                   (ev.target as HTMLImageElement).nextElementSibling?.removeAttribute("style");

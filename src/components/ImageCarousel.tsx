@@ -10,6 +10,7 @@ type Props = {
 };
 
 const AUTOPLAY_MS = 4500;
+const protectMedia = (e: React.SyntheticEvent<HTMLElement>) => e.preventDefault();
 
 const ImageCarousel: React.FC<Props> = ({ items, eyebrow, title }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -73,7 +74,10 @@ const ImageCarousel: React.FC<Props> = ({ items, eyebrow, title }) => {
             <img
               src={activeItem.image}
               alt={activeItem.title}
-              className="carousel-stage-image"
+              className="carousel-stage-image protected-media"
+              draggable={false}
+              onDragStart={protectMedia}
+              onContextMenu={protectMedia}
               onError={() => setHiddenImages((current) => ({ ...current, [activeItem.title]: true }))}
             />
           ) : (
@@ -123,7 +127,10 @@ const ImageCarousel: React.FC<Props> = ({ items, eyebrow, title }) => {
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="gallery-grid-image"
+                      className="gallery-grid-image protected-media"
+                      draggable={false}
+                      onDragStart={protectMedia}
+                      onContextMenu={protectMedia}
                       onError={() => setHiddenImages((current) => ({ ...current, [item.title]: true }))}
                     />
                   ) : (

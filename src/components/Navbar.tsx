@@ -4,6 +4,7 @@ import { HOME_SUB_ITEMS, NAV_ITEMS } from "../data";
 import "./Navbar.css";
 
 const NAV_LOGO_SRC = "/images/nav-logo.png";
+const protectMedia = (e: React.SyntheticEvent<HTMLElement>) => e.preventDefault();
 
 const Navbar: React.FC = () => {
   const [mob, setMob] = useState(false);
@@ -70,6 +71,9 @@ const Navbar: React.FC = () => {
                 className="nav-brand-logo"
                 src={NAV_LOGO_SRC}
                 alt="Shiena logo"
+                draggable={false}
+                onDragStart={protectMedia}
+                onContextMenu={protectMedia}
                 onError={() => setLogoVisible(false)}
               />
             </span>

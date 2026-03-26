@@ -3,6 +3,7 @@ import { C, HF, BF } from "../theme";
 import Icon from "./Icon";
 
 const HERO_VIDEO_SRC = "/videos/hero-video.mp4";
+const protectMedia = (e: React.SyntheticEvent<HTMLElement>) => e.preventDefault();
 
 const Hero: React.FC = () => {
   const [videoOpen, setVideoOpen] = useState(false);
@@ -69,7 +70,15 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="hero-img-wrap" style={{ display: "flex", justifyContent: "center" }}>
-            <img src="/images/hero-photo.jpg" alt="Shiena May Badajos" style={{ width: 330, height: 410, borderRadius: 14, objectFit: "cover", border: `1.5px solid ${C.border}` }} />
+            <img
+              className="protected-media"
+              src="/images/hero-photo.jpg"
+              alt="Shiena May Badajos"
+              draggable={false}
+              onDragStart={protectMedia}
+              onContextMenu={protectMedia}
+              style={{ width: 330, height: 410, borderRadius: 14, objectFit: "cover", border: `1.5px solid ${C.border}` }}
+            />
           </div>
         </div>
       </section>
@@ -83,7 +92,13 @@ const Hero: React.FC = () => {
             <div className="hero-video-modal card">
               <div className="hero-video-frame">
                 {HERO_VIDEO_SRC ? (
-                  <video controls autoPlay style={{ width: "100%", height: "100%", objectFit: "cover" }}>
+                  <video
+                    className="protected-media"
+                    controls
+                    autoPlay
+                    onContextMenu={protectMedia}
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  >
                     <source src={HERO_VIDEO_SRC} />
                   </video>
                 ) : (

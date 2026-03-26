@@ -18,6 +18,7 @@ const stats = [
 ];
 
 const ABOUT_PHOTO_SRC = "/images/about-photo.jpg";
+const protectMedia = (e: React.SyntheticEvent<HTMLElement>) => e.preventDefault();
 
 const Overview: React.FC = () => {
   const [aboutPhotoVisible, setAboutPhotoVisible] = useState(true);
@@ -76,8 +77,12 @@ const Overview: React.FC = () => {
 
         {aboutPhotoVisible ? (
           <img
+            className="protected-media"
             src={ABOUT_PHOTO_SRC}
             alt="Shiena portrait"
+            draggable={false}
+            onDragStart={protectMedia}
+            onContextMenu={protectMedia}
             onError={() => setAboutPhotoVisible(false)}
             style={{
               width: "100%",
