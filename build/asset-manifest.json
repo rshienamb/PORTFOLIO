@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.96b0a731.css",
-    "main.js": "/static/js/main.825b07fb.js",
+    "main.css": "/static/css/main.8b57040f.css",
+    "main.js": "/static/js/main.cc6323db.js",
     "static/media/Convergent and me.jpg": "/static/media/Convergent and me.e2628665ee9d19c07ab1.jpg",
     "static/media/Convergent.png": "/static/media/Convergent.a9bdb854051fdeeb7d8b.png",
     "static/media/Arquee.png": "/static/media/Arquee.a7dab2a02d032e611d4f.png",
@@ -18,11 +18,11 @@
     "static/media/Happy Tan and me jpg.jpg": "/static/media/Happy Tan and me jpg.8d8c4faadd1b4a89d060.jpg",
     "static/media/EMA.png": "/static/media/EMA.49d609bb1909d3a19670.png",
     "index.html": "/index.html",
-    "main.96b0a731.css.map": "/static/css/main.96b0a731.css.map",
-    "main.825b07fb.js.map": "/static/js/main.825b07fb.js.map"
+    "main.8b57040f.css.map": "/static/css/main.8b57040f.css.map",
+    "main.cc6323db.js.map": "/static/js/main.cc6323db.js.map"
   },
   "entrypoints": [
-    "static/css/main.96b0a731.css",
-    "static/js/main.825b07fb.js"
+    "static/css/main.8b57040f.css",
+    "static/js/main.cc6323db.js"
   ]
 }

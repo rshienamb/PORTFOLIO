@@ -42,13 +42,13 @@ const References: React.FC = () => {
           <div style={{ fontSize: "0.85rem", color: C.textMuted, lineHeight: 1.6, marginBottom: tab === "professional" ? 14 : 0, fontFamily: BF }}>
             {tab === "character"
               ? "Personal references available from family and community connections in Bicol and Cavite."
-              : "Professional references available. Resume with full contact details downloadable below."}
+              : "Professional references available. Resume with full contact details downloadable below. (NOT DOWNLOADABLE YET)"}
           </div>
-          {tab === "professional" && (
+          {/* {tab === "professional" && (
             <button className="btn-outline" style={{ fontSize: "0.75rem", padding: "9px 18px", marginTop: 14 }}>
               ⬇ Download Resume
             </button>
-          )}
+          )} */}
         </div>
       </div>
     </section>

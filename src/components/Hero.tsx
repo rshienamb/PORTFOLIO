@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
 
           <div className="hero-img-wrap" style={{ display: "flex", justifyContent: "center" }}>
             <img
-              className="protected-media"
+              className="protected-media hero-photo"
               src="/images/hero-photo.jpg"
               alt="Shiena May Badajos"
               draggable={false}

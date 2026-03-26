@@ -17,7 +17,7 @@ const stats = [
   { icon: "pin", label: "Location", value: "Philippines" },
 ];
 
-const ABOUT_PHOTO_SRC = "/images/about-photo.jpg";
+const ABOUT_PHOTO_SRC = "/images/about-photo.JPG";
 const protectMedia = (e: React.SyntheticEvent<HTMLElement>) => e.preventDefault();
 
 const Overview: React.FC = () => {

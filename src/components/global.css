@@ -499,7 +499,12 @@
 /* ── Responsive ──────────────────────────────────────── */
 @media (max-width: 820px) {
   .hero-grid { grid-template-columns: 1fr !important; }
-  .hero-img-wrap { display: none !important; }
+  .hero-img-wrap { display: flex !important; }
+  .hero-photo {
+    width: min(100%, 360px) !important;
+    height: auto !important;
+    aspect-ratio: 330 / 410;
+  }
   .two-col { grid-template-columns: 1fr !important; }
   .overview-grid { grid-template-columns: 1fr !important; }
   .three-col { grid-template-columns: 1fr !important; }
