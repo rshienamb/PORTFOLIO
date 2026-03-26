@@ -14,6 +14,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+## Basin Form Setup
+
+To connect the contact form to Basin, create a `.env` file in the project root and add:
+
+`REACT_APP_BASIN_FORM_ENDPOINT=https://usebasin.com/f/your-form-id`
+
+Restart the dev server after adding or changing the variable.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\

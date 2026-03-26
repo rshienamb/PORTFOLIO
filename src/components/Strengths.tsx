@@ -1,6 +1,7 @@
 import React from "react";
 import { C, HF, BF } from "../theme";
 import { STRENGTHS, CHALLENGES } from "../data";
+import Icon, { IconName } from "./Icon";
 
 const Strengths: React.FC = () => (
   <section id="Strengths" className="section">
@@ -8,22 +9,31 @@ const Strengths: React.FC = () => (
     <h2 className="sec-title">Strengths & Growth Areas</h2>
     <div className="sec-divider" />
 
-    <p style={{ fontSize: "0.7rem", letterSpacing: "0.12em", textTransform: "uppercase", color: C.teal, fontWeight: 700, marginBottom: "1rem", fontFamily: BF }}>✦ Strengths</p>
+    <p style={{ fontSize: "0.7rem", letterSpacing: "0.12em", textTransform: "uppercase", color: C.teal, fontWeight: 700, marginBottom: "1rem", fontFamily: BF, display: "flex", alignItems: "center", gap: 8 }}>
+      <Icon name="sparkles" size={14} />
+      Strengths
+    </p>
     <div className="two-col" style={{ marginBottom: "2rem" }}>
       {STRENGTHS.map((s, i) => (
         <div key={i} className="card trait-card">
-          <div style={{ fontSize: "1.8rem", marginBottom: 10 }}>{s.icon}</div>
+          <div style={{ marginBottom: 10 }}>
+            <Icon name={s.icon as IconName} size={28} />
+          </div>
           <div style={{ fontFamily: HF, fontSize: "1.1rem", fontWeight: 700, color: C.text, marginBottom: 8 }}>{s.title}</div>
           <div style={{ fontSize: "0.83rem", lineHeight: 1.7, color: C.textMuted, fontFamily: BF }}>{s.text}</div>
         </div>
       ))}
     </div>
 
-    <p style={{ fontSize: "0.7rem", letterSpacing: "0.12em", textTransform: "uppercase", color: C.textMuted, fontWeight: 700, marginBottom: "1rem", fontFamily: BF }}>◇ Growth Areas</p>
+    <p style={{ fontSize: "0.7rem", letterSpacing: "0.12em", textTransform: "uppercase", color: C.textMuted, fontWeight: 700, marginBottom: "1rem", fontFamily: BF }}>
+      Growth Areas
+    </p>
     <div className="two-col">
       {CHALLENGES.map((c, i) => (
         <div key={i} className="card trait-card growth-card">
-          <div style={{ fontSize: "1.8rem", marginBottom: 10 }}>{c.icon}</div>
+          <div style={{ marginBottom: 10 }}>
+            <Icon name={c.icon as IconName} size={28} color={C.textMuted} />
+          </div>
           <div style={{ fontFamily: HF, fontSize: "1.1rem", fontWeight: 700, color: C.text, marginBottom: 8 }}>{c.title}</div>
           <div style={{ fontSize: "0.83rem", lineHeight: 1.7, color: C.textMuted, fontFamily: BF }}>{c.text}</div>
         </div>

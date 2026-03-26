@@ -1,20 +1,29 @@
 export const NAV_ITEMS = [
   "Home", "Overview", "Education", "Strengths",
-  "Experience", "Skills", "Why Me", "References", "Contact",
+  "Experience", "Skills", "Training & Certs", "Why Me", "References", "Contact",
+];
+
+export const HOME_SUB_ITEMS = [
+  "Overview",
+  "Education",
+  "Strengths",
+  "Experience",
+  "Skills",
+  "References",
 ];
 
 export interface EduItem {
-  emoji: string;
+  icon: string;
   stage: string;
   title: string;
   short: string;
   full: string;
-  image?: string; // e.g. "/images/edu-primary.jpg"
+  image?: string;
 }
 
 export const EDUCATION: EduItem[] = [
   {
-    emoji: "🏫",
+    icon: "school",
     stage: "Primary & Junior High",
     title: "Nabua, Camarines Sur",
     short: "15 years of foundational learning with consistent honor status. Discovered a love for art and creativity.",
@@ -22,7 +31,7 @@ export const EDUCATION: EduItem[] = [
     image: "/images/edu-primary.jpg",
   },
   {
-    emoji: "🎓",
+    icon: "graduation",
     stage: "Senior High School",
     title: "ABM Strand, Cavite",
     short: "Pioneer K-12 batch, Accountancy, Business & Management strand. Graduated with honors despite financial challenges.",
@@ -30,7 +39,7 @@ export const EDUCATION: EduItem[] = [
     image: "/images/edu-secondary.jpg",
   },
   {
-    emoji: "🏛️",
+    icon: "university",
     stage: "College",
     title: "PUP — BS Business Administration",
     short: "Major in Human Resource Management. Magna Cum Laude, GWA 1.43.",
@@ -41,17 +50,17 @@ export const EDUCATION: EduItem[] = [
 
 export const STRENGTHS = [
   {
-    icon: "💬",
+    icon: "communication",
     title: "Communication",
     text: "Honed through extensive client interaction — adapts quickly to new roles, systems, and environments. Knows when to ask for help and when to take initiative.",
   },
   {
-    icon: "🔄",
+    icon: "refresh",
     title: "Flexible & Adaptable",
     text: "Thrives in different roles, environments, and schedules. Adjusts seamlessly to maintain productivity even in rapidly changing circumstances.",
   },
   {
-    icon: "🔒",
+    icon: "shield",
     title: "Integrity & Transparency",
     text: "Handles sensitive matters with discretion while remaining open when sharing insights that can improve systems and team performance.",
   },
@@ -59,17 +68,17 @@ export const STRENGTHS = [
 
 export const CHALLENGES = [
   {
-    icon: "🧮",
+    icon: "calculator",
     title: "Complex Computations",
     text: "Proactively leverages tools — calculators, spreadsheets, Excel — to ensure accuracy and efficiency when faced with complex numerical tasks.",
   },
   {
-    icon: "🔍",
+    icon: "search",
     title: "Detail Orientation",
     text: "Being highly detail-oriented can slow decision-making, but learned to balance accuracy with efficiency and timely action without compromising quality.",
   },
   {
-    icon: "⏱️",
+    icon: "clock",
     title: "Time Management",
     text: "Focuses on completing tasks one at a time for quality. Highly flexible for multiple tasks when they don't require close, complex supervision.",
   },
@@ -79,6 +88,7 @@ export interface ExpItem {
   role: string;
   company: string;
   period: string;
+  rate?: string;
   desc: string;
   tags: string[];
 }
@@ -88,6 +98,7 @@ export const EXPERIENCE: ExpItem[] = [
     role: "Chat Agent",
     company: "EMA",
     period: "Aug 2025 – Feb 2025",
+    rate: "₱20,000",
     desc: "Remote independent contractor focused on producing sales and building strong client relationships. Engaged clients via chat, conducted upsells, and analyzed purchasing trends.",
     tags: ["Remote Sales", "Upselling", "Client Relations", "Data Tracking", "Slack / Zoom"],
   },
@@ -95,13 +106,15 @@ export const EXPERIENCE: ExpItem[] = [
     role: "Documentation Specialist",
     company: "Convergent Outsourcing Solutions Inc.",
     period: "Oct 2024 – Jun 2025",
+    rate: "₱18,000",
     desc: "Specialized in real estate transaction documentation — estate tax amnesty, title transfers, land titling. Acted as liaison between clients, lawyers, brokers, and government agencies.",
     tags: ["Real Estate Docs", "Legal Drafting", "Government Liaison", "CRM", "Client Management"],
   },
   {
     role: "Customer Service Representative",
-    company: "Concentrix – Makati City",
+    company: "Concentrix",
     period: "Feb 2025 – Sep 2025",
+    rate: "₱18,000",
     desc: "Provided support for an international ticketing account via voice and non-voice channels. Handled refunds, fraud escalation, and technical troubleshooting in a high-volume BPO environment.",
     tags: ["Voice & Chat Support", "Refund Processing", "Fraud Escalation", "Zendesk", "CRM"],
   },
@@ -109,6 +122,7 @@ export const EXPERIENCE: ExpItem[] = [
     role: "Executive Assistant",
     company: "Arquee Corporation (ASYA Design)",
     period: "Jun 2023 – Aug 2023",
+    rate: "₱18,000",
     desc: "EA to the HR Director at a prominent architecture firm in Pasay. Managed recruitment support, HR documentation, calendar coordination, and confidential records.",
     tags: ["HR Documentation", "Recruitment Support", "Calendar Coordination", "Records Management"],
   },
@@ -116,14 +130,21 @@ export const EXPERIENCE: ExpItem[] = [
     role: "Administrative Assistant → Officer",
     company: "Happy Tan Shopping Center",
     period: "Dec 2022 – Feb 2023",
+    rate: "₱13,000",
     desc: "Pioneer warehouse employee handling inventory, accounts payable, barcode generation, and interdepartmental coordination. Promoted to Administrative Officer after one month.",
     tags: ["Inventory Management", "Accounts Payable", "Barcode Generation", "Records", "Reporting"],
   },
 ];
 
+export interface GalleryItem {
+  title: string;
+  subtitle: string;
+  image?: string;
+}
+
 export const SKILLS = [
   {
-    icon: "📋",
+    icon: "clipboard",
     title: "Administrative & Office Support",
     items: [
       "HR documentation & records management",
@@ -134,7 +155,7 @@ export const SKILLS = [
     ],
   },
   {
-    icon: "🎧",
+    icon: "headset",
     title: "Customer & Client Support",
     items: [
       "Voice & non-voice support & escalation",
@@ -145,7 +166,7 @@ export const SKILLS = [
     ],
   },
   {
-    icon: "🏠",
+    icon: "home",
     title: "Real Estate & Legal",
     items: [
       "Estate tax amnesty processing",
@@ -156,7 +177,7 @@ export const SKILLS = [
     ],
   },
   {
-    icon: "📊",
+    icon: "chart",
     title: "Data, Reporting & Analytics",
     items: [
       "Data accuracy, tracking & reporting",

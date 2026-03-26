@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4170973c.css",
+    "main.js": "/static/js/main.9475c76c.js",
+    "static/media/Convergent and me.jpg": "/static/media/Convergent and me.e2628665ee9d19c07ab1.jpg",
+    "static/media/Convergent.png": "/static/media/Convergent.a9bdb854051fdeeb7d8b.png",
+    "static/media/Arquee.png": "/static/media/Arquee.a7dab2a02d032e611d4f.png",
+    "static/media/GHS-1679-2024-024 (1)_page-0001.jpg": "/static/media/GHS-1679-2024-024 (1)_page-0001.a89c0728930e26260ccc.jpg",
+    "static/media/cert 25.jpg": "/static/media/cert 25.362bfa42a181e7c76c10.jpg",
+    "static/media/Concentrix and me.jpg": "/static/media/Concentrix and me.af036933eab330cebfb5.jpg",
+    "static/media/Cert 19.jpg": "/static/media/Cert 19.1c68de73176f1bda9492.jpg",
+    "static/media/Convergent.jpeg": "/static/media/Convergent.bf0466dcefbb4fdc5a8d.jpeg",
+    "static/media/CERT02.jpg": "/static/media/CERT02.39b315a22099bbb84c38.jpg",
+    "static/media/CERT(1).jpg": "/static/media/CERT(1).bb7f820e98a8a58b28f8.jpg",
+    "static/media/CERT.jpg": "/static/media/CERT.3640af792f018e648c5c.jpg",
+    "static/media/cert 22.jpg": "/static/media/cert 22.9b9c5a37a6927fc9ae85.jpg",
+    "static/media/Happy Tan Company.jpg": "/static/media/Happy Tan Company.a1d0c006f3bbafb76e34.jpg",
+    "static/media/Happy Tan and me jpg.jpg": "/static/media/Happy Tan and me jpg.8d8c4faadd1b4a89d060.jpg",
+    "static/media/EMA.png": "/static/media/EMA.49d609bb1909d3a19670.png",
+    "index.html": "/index.html",
+    "main.4170973c.css.map": "/static/css/main.4170973c.css.map",
+    "main.9475c76c.js.map": "/static/js/main.9475c76c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4170973c.css",
+    "static/js/main.9475c76c.js"
+  ]
+}

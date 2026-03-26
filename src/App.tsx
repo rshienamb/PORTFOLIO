@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Strengths from "./components/Strengths";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
+import TrainingCerts from "./components/TrainingCerts";
 import WhyMe from "./components/WhyMe";
 import References from "./components/References";
 import Contact from "./components/Contact";
@@ -21,6 +22,7 @@ function App() {
       <Strengths />
       <Experience />
       <Skills />
+      <TrainingCerts />
       <WhyMe />
       <References />
       <Contact />

@@ -1,6 +1,8 @@
 import React from "react";
 import { C, HF, BF } from "../theme";
 import { EXPERIENCE } from "../data";
+import { workplaceGallery } from "../galleryAssets";
+import ImageCarousel from "./ImageCarousel";
 
 const Experience: React.FC = () => (
   <section id="Experience" className="section">
@@ -9,7 +11,6 @@ const Experience: React.FC = () => (
     <div className="sec-divider" />
 
     <div style={{ position: "relative", paddingLeft: 28 }}>
-      {/* Vertical line */}
       <div style={{
         position: "absolute", left: 6, top: 8, bottom: 8, width: 2,
         background: `linear-gradient(to bottom,${C.teal},${C.tealDark},transparent)`,
@@ -17,7 +18,6 @@ const Experience: React.FC = () => (
 
       {EXPERIENCE.map((ex, i) => (
         <div key={i} className="card timeline-item">
-          {/* Dot */}
           <div style={{
             position: "absolute", left: -24, top: 22, width: 12, height: 12,
             borderRadius: "50%", background: C.teal,
@@ -27,6 +27,11 @@ const Experience: React.FC = () => (
           <div style={{ fontFamily: HF, fontSize: "1.15rem", fontWeight: 700, color: C.text, marginBottom: 2 }}>{ex.role}</div>
           <div style={{ fontSize: "0.85rem", color: C.teal, fontWeight: 700, marginBottom: 4, fontFamily: BF }}>{ex.company}</div>
           <div style={{ fontSize: "0.75rem", color: C.textMuted, letterSpacing: "0.08em", marginBottom: 12, fontFamily: BF }}>{ex.period}</div>
+          {ex.rate ? (
+            <div style={{ fontSize: "0.78rem", color: C.accentMid, fontWeight: 700, marginBottom: 12, fontFamily: BF }}>
+              Rate: {ex.rate}
+            </div>
+          ) : null}
           <div style={{ fontSize: "0.85rem", lineHeight: 1.75, color: C.textMuted, marginBottom: 14, fontFamily: BF }}>{ex.desc}</div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
             {ex.tags.map((t) => (
@@ -35,6 +40,14 @@ const Experience: React.FC = () => (
           </div>
         </div>
       ))}
+    </div>
+
+    <div style={{ marginTop: "3rem" }}>
+      <ImageCarousel
+        items={workplaceGallery}
+        eyebrow="Workplace Gallery"
+        title="Company and workplace snapshots"
+      />
     </div>
   </section>
 );
