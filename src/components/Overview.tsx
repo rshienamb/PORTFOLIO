@@ -113,11 +113,6 @@ const Overview: React.FC = () => {
           <strong style={{ color: C.teal }}>May-May</strong> among family and
           friends. Born Tagalog but raised as a proud Bicolana, I grew up
           grounded in resilience, adaptability, and a strong sense of heritage.
-          I speak{" "}
-          <strong style={{ color: C.text }}>
-            Tagalog, English, and Rinconada
-          </strong>{" "}
-          fluently.
         </p>
       </div>
 
