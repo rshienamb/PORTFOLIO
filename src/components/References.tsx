@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { C, HF, BF } from "../theme";
 
+const RESUME_A = "Admin Application_Badajos, Shiena.pdf";
+const RESUME_B = "Shiena May Badajos_Virtual Assistant.pdf";
+
 const References: React.FC = () => {
   const [tab, setTab] = useState<"character" | "professional">("character");
 
@@ -42,13 +45,16 @@ const References: React.FC = () => {
           <div style={{ fontSize: "0.85rem", color: C.textMuted, lineHeight: 1.6, marginBottom: tab === "professional" ? 14 : 0, fontFamily: BF }}>
             {tab === "character"
               ? "Personal references available from family and community connections in Bicol and Cavite."
-              : "Professional references available. Resume with full contact details downloadable below. (NOT DOWNLOADABLE YET)"}
+              : "Professional references available. Resume with full contact details downloadable below."}
           </div>
-          {/* {tab === "professional" && (
-            <button className="btn-outline" style={{ fontSize: "0.75rem", padding: "9px 18px", marginTop: 14 }}>
-              ⬇ Download Resume
-            </button>
-          )} */}
+          {tab === "professional" && (
+            <div style={{ marginTop: 14, display: "flex", gap: 8, flexWrap: "wrap" }}>
+              <a href={encodeURI(`/${RESUME_A}`)} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: "9px 18px", fontSize: "0.85rem" }}>{RESUME_A}</a>
+              {/* <a href={encodeURI(`/${RESUME_A}`)} download className="btn-outline" style={{ padding: "9px 18px", fontSize: "0.85rem" }}>Download {RESUME_A}</a> */}
+              <a href={encodeURI(`/${RESUME_B}`)} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: "9px 18px", fontSize: "0.85rem" }}>{RESUME_B}</a>
+              {/* <a href={encodeURI(`/${RESUME_B}`)} download className="btn-outline" style={{ padding: "9px 18px", fontSize: "0.85rem" }}>Download {RESUME_B}</a> */}
+            </div>
+          )}
         </div>
       </div>
     </section>
