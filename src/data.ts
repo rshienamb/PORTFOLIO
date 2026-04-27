@@ -113,7 +113,7 @@ export const EXPERIENCE: ExpItem[] = [
   {
     role: "Customer Service Representative",
     company: "Concentrix",
-    period: "Feb 2025 – Sep 2025 • 7 mos",
+    period: "Feb 2024 – Sep 2024 • 7 mos",
     rate: "₱18,000",
     desc: "Provided support for an international ticketing account via voice and non-voice channels. Handled refunds, fraud escalation, and technical troubleshooting in a high-volume BPO environment.",
     tags: ["Voice & Chat Support", "Refund Processing", "Fraud Escalation", "Zendesk", "CRM"],
