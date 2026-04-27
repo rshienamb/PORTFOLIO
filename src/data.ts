@@ -97,7 +97,7 @@ export const EXPERIENCE: ExpItem[] = [
   {
     role: "Chat Agent",
     company: "EMA",
-    period: "Feb 2025 – Aug 2025 • 6 mos",
+    period: "Aug 2025 – Feb 2026 • 6 mos",
     rate: "₱23,000",
     desc: "Remote independent contractor focused on producing sales and building strong client relationships. Engaged clients via chat, conducted upsells, and analyzed purchasing trends.",
     tags: ["Remote Sales", "Upselling", "Client Relations", "Data Tracking", "Slack / Zoom"],
