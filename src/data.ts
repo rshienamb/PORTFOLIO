@@ -97,15 +97,15 @@ export const EXPERIENCE: ExpItem[] = [
   {
     role: "Chat Agent",
     company: "EMA",
-    period: "Aug 2025 – Feb 2025",
-    rate: "₱20,000",
+    period: "Feb 2025 – Aug 2025 • 6 mos",
+    rate: "₱23,000",
     desc: "Remote independent contractor focused on producing sales and building strong client relationships. Engaged clients via chat, conducted upsells, and analyzed purchasing trends.",
     tags: ["Remote Sales", "Upselling", "Client Relations", "Data Tracking", "Slack / Zoom"],
   },
   {
     role: "Documentation Specialist",
     company: "Convergent Outsourcing Solutions Inc.",
-    period: "Oct 2024 – Jun 2025",
+    period: "Oct 2024 – Jun 2025 • 8 mos",
     rate: "₱18,000",
     desc: "Specialized in real estate transaction documentation — estate tax amnesty, title transfers, land titling. Acted as liaison between clients, lawyers, brokers, and government agencies.",
     tags: ["Real Estate Docs", "Legal Drafting", "Government Liaison", "CRM", "Client Management"],
@@ -113,7 +113,7 @@ export const EXPERIENCE: ExpItem[] = [
   {
     role: "Customer Service Representative",
     company: "Concentrix",
-    period: "Feb 2025 – Sep 2025",
+    period: "Feb 2025 – Sep 2025 • 7 mos",
     rate: "₱18,000",
     desc: "Provided support for an international ticketing account via voice and non-voice channels. Handled refunds, fraud escalation, and technical troubleshooting in a high-volume BPO environment.",
     tags: ["Voice & Chat Support", "Refund Processing", "Fraud Escalation", "Zendesk", "CRM"],
@@ -121,7 +121,7 @@ export const EXPERIENCE: ExpItem[] = [
   {
     role: "Executive Assistant",
     company: "Arquee Corporation (ASYA Design)",
-    period: "Jun 2023 – Aug 2023",
+    period: "Jun 2023 – Aug 2023 • 2 mos",
     rate: "₱18,000",
     desc: "EA to the HR Director at a prominent architecture firm in Pasay. Managed recruitment support, HR documentation, calendar coordination, and confidential records.",
     tags: ["HR Documentation", "Recruitment Support", "Calendar Coordination", "Records Management"],
@@ -129,7 +129,7 @@ export const EXPERIENCE: ExpItem[] = [
   {
     role: "Administrative Assistant → Officer",
     company: "Happy Tan Shopping Center",
-    period: "Dec 2022 – Feb 2023",
+    period: "Dec 2022 – Feb 2023 • 2 mos",
     rate: "₱13,000",
     desc: "Pioneer warehouse employee handling inventory, accounts payable, barcode generation, and interdepartmental coordination. Promoted to Administrative Officer after one month.",
     tags: ["Inventory Management", "Accounts Payable", "Barcode Generation", "Records", "Reporting"],
